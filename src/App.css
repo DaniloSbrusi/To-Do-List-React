@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(180deg, #00e6e6, #008080);
+}
+
+.new-item {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.container {
+  background-color: #f2f2f2;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todo-list {
+  list-style: none;  /*Remove pontos da lista*/
+  margin: 10px 0 0;
+  padding: 5px;
+  height: 300px;
+  overflow: auto; /*Barra de rolagem*/
+}
+
+.todo-list::-webkit-scrollbar {
+  display: none; /* Esconde barra de rolagem*/
+}
+
+.todo-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Pra cada item após um item*/
+.todo-item + .todo-item {
+  margin-top: 5px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 5px;
+}
